@@ -1,0 +1,344 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Shared Form Container */
+.signup-container,
+.login-container {
+  background-color: #ffffff;
+  padding: 25px;
+  max-width: 350px;
+  margin: 60px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.signup-container h2,
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 22px;
+  color: #333;
+}
+
+/* Input & Select */
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 15px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline-color: #007bff;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Link */
+a {
+  display: block;
+  text-align: center;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.nav-left {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.logout-btn {
+  padding: 6px 12px;
+  background-color: crimson;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: auto; /* ✅ make sure it doesn't stretch */
+}
+
+/* Add Transaction Page */
+.add-transaction-page {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.add-transaction-page h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.add-transaction-container {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.add-transaction-container form input,
+.add-transaction-container form select,
+.add-transaction-container form button {
+  margin-top: 10px;
+}
+
+.add-transaction-container form button {
+  width: 100%;
+}
+
+/* Balance Summary */
+.balance-summary {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 400px;
+  text-align: left;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.balance-summary h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.balance-summary p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.chart-container {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.chart-container h3 {
+  margin-bottom: 15px;
+}
+
+/* Dashboard wrapper background */
+.dashboard-wrapper {
+  background-color: #f3f4f6;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Dashboard container */
+.dashboard-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Heading */
+.dashboard-heading {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #222;
+}
+
+/* Grid layout */
+.dashboard-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.left-section,
+.right-section {
+  flex: 1 1 400px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dashboard-grid {
+    flex-direction: column;
+  }
+}
+
+.app-footer {
+  background-color: #f4f4f4;
+  padding: 15px 0;
+  text-align: center;
+  color: #555;
+  font-size: 14px;
+  border-top: 1px solid #ccc;
+  margin-top: 30px;
+}
+
+.transaction-list {
+  margin-top: 30px;
+}
+
+.transaction-list h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.transaction-card {
+  background-color: #ffffff;
+  padding: 15px 20px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.txn-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.txn-badge {
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: white;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.transaction-card.income .txn-badge {
+  background-color: #00c49f;
+}
+
+.transaction-card.expense .txn-badge {
+  background-color: #ff6b6b;
+}
+
+.txn-amount {
+  font-size: 16px;
+}
+
+.txn-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+.txn-category {
+  font-style: italic;
+}
+
+.txn-date {
+  font-size: 12px;
+}
+
+.chart-container {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  max-width: 600px;
+}
+
+.analytics-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Each chart should be half width */
+.analytics-grid .chart-container {
+  flex: 1 1 48%;
+  max-width: 48%;
+}
+
+/* On smaller screens, stack them */
+@media (max-width: 768px) {
+  .analytics-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .analytics-grid .chart-container {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .nav-left,
+  .nav-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
